@@ -31,7 +31,7 @@ goconsul [flags]
   -p, --prefix string              Consul prefix. ex:- config/ (default "all")
 ```
 
-### list
+### List
 ```shell script
 $ ./goconsul -a <consul_host>:8500 -t <token>
 +----+---------------------------------------------------------+----------------------------+
@@ -96,10 +96,16 @@ $ ./goconsul -a <consul_host>:8500 -t <token>
 Total keys: 55
 ```
 
-### export
+### Export
 ```shell script
 $ ./goconsul -a <consul_host>:8500 -t <token> -o json
 data exported to file: data.json
 ```
-
-
+### list with prefix
+```shell script
+$ ./goconsul -a <consul_host>:8500 -t <token> -p config/
+```
+### export with prefix
+```shell script
+$ ./goconsul -a <consul_host>:8500 -t <token> -p config/ -o json
+```
