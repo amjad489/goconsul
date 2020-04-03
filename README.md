@@ -101,11 +101,11 @@ Total keys: 55
 $ ./goconsul -a <consul_host>:8500 -t <token> -o json
 data exported to file: data.json
 ```
-### list with prefix
+### List with prefix
 ```shell script
 $ ./goconsul -a <consul_host>:8500 -t <token> -p config/
 ```
-### export with prefix
+### Export with prefix
 ```shell script
 $ ./goconsul -a <consul_host>:8500 -t <token> -p config/ -o json
 ```
