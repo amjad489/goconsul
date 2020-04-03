@@ -10,11 +10,11 @@ $ git clone https://github.com/amjad489/goconsul.git
 ### Build
 ```shell script
 $ cd goconsul
-$ go build
+$ go install
 ```
 ### Run
 ```shell script
-$ ./goconsul
+$ goconsul
 ```
 ### Help
 ```
@@ -33,7 +33,7 @@ goconsul [flags]
 
 ### List
 ```shell script
-$ ./goconsul -a <consul_host>:8500 -t <token>
+$ goconsul -a <consul_host>:8500 -t <token>
 +----+---------------------------------------------------------+----------------------------+
 | ID |                           KEY                           |           VALUE            |
 +----+---------------------------------------------------------+----------------------------+
@@ -98,14 +98,14 @@ Total keys: 55
 
 ### Export
 ```shell script
-$ ./goconsul -a <consul_host>:8500 -t <token> -o json
+$ goconsul -a <consul_host>:8500 -t <token> -o json
 data exported to file: data.json
 ```
 ### List with prefix
 ```shell script
-$ ./goconsul -a <consul_host>:8500 -t <token> -p config/
+$ goconsul -a <consul_host>:8500 -t <token> -p config/
 ```
 ### Export with prefix
 ```shell script
-$ ./goconsul -a <consul_host>:8500 -t <token> -p config/ -o json
+$ goconsul -a <consul_host>:8500 -t <token> -p config/ -o json
 ```
