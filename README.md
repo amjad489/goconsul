@@ -12,6 +12,8 @@ $ git clone https://github.com/amjad489/goconsul.git
 $ cd goconsul
 $ go install
 ```
+Alternatively download the binary from [here](https://github.com/amjad489/goconsul/releases).
+
 ### Run
 ```shell script
 $ goconsul
