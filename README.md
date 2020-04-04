@@ -16,7 +16,7 @@ Alternatively download the binary from [here](https://github.com/amjad489/gocons
 
 ### Run
 ```shell script
-$ goconsul
+$ goconsul -h
 ```
 ### Help
 ```
